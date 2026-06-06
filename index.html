@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoluxe website</title>
+    <link rel="stylesheet" href="css/style.css">
+   <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body id="top">
+
+<div class="overlay" data-overlay></div>
+
+
+ <header class="header" data-header data-aos="fade-down" data-aos-delay="100">
+  <div class="container">
+
+    <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none;" data-aos="fade-right" data-aos-delay="200">
+      <img src="images/logo.png" alt="Ecoluxe Logo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; box-shadow: 1px 1px 5px rgba(0,0,0,0.2);">
+      <p style="color:var(--smoky-black);font-size: 2.5rem;font-weight: 700;letter-spacing: 2px;text-transform: uppercase;text-shadow: 1px 1px 2px rgba(0,0,0,0.2);margin: 0;">Ecoluxe Soap</p>
+    </a>
+
+    <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu" data-aos="zoom-in" data-aos-delay="300">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+
+    <nav class="navbar" data-navbar data-aos="fade-left" data-aos-delay="400">
+
+      <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu" data-aos="fade-down" data-aos-delay="500">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <ul class="navbar-list">
+        <li class="navbar-item" data-aos="fade-up" data-aos-delay="500">
+          <a href="index.html" class="navbar-link">Home</a>
+        </li>
+        <li class="navbar-item" data-aos="fade-up" data-aos-delay="550">
+          <a href="about.html" class="navbar-link">About</a>
+        </li>
+        <li class="navbar-item" data-aos="fade-up" data-aos-delay="600">
+          <a href="product.html" class="navbar-link">Products</a>
+        </li>
+        <li class="navbar-item" data-aos="fade-up" data-aos-delay="650">
+          <a href="contact.html" class="navbar-link">Contact</a>
+        </li>
+      </ul>
+
+      <ul class="nav-action-list">
+        <li data-aos="fade-left" data-aos-delay="700">
+          <a href="#" class="nav-action-btn">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            <span class="nav-action-text">Login / Register</span>
+          </a>
+        </li>
+
+        <li data-aos="fade-left" data-aos-delay="750">
+          <button class="nav-action-btn">
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+            <span class="nav-action-text">Wishlist</span>
+          </button>
+        </li>
+
+        <li data-aos="fade-left" data-aos-delay="800">
+          <button class="nav-action-btn">
+            <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+            <data class="nav-action-text" value="318.00">Basket: <strong>Rs.318.00</strong></data>
+          </button>
+        </li>
+      </ul>
+
+    </nav>
+
+  </div>
+</header>
+
+      <!-- 
+        - #HERO
+      -->
+
+<section class="section-hero" style="background-image: url('images/banner1 (2).png')" data-aos="fade-up">
+  <div class="container">
+
+    <h2 class="h1 hero-title" data-aos="fade-right" data-aos-delay="100">
+      Your On-the-Go <strong>Hygiene Solution! </strong>
+    </h2>
+
+    <p class="hero-text" data-aos="fade-left" data-aos-delay="300">
+      Whether you’re rushing to class, traveling across cities, or managing home chores — Ecoluxe keeps you clean, naturally.
+    </p>
+
+    <button class="btn btn-primary" data-aos="zoom-in" data-aos-delay="500">
+      <span>Shop Now</span>
+      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+    </button>
+
+  </div>
+</section>
+
+
+    <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product">
+        <div class="container">
+
+            <h2 class="h2 section-title" data-aos="fade-right">Bestsellers Products</h2>
+
+            <ul class="product-list">
+
+            <li class="product-item" data-aos="zoom-in" data-aos-delay="0">              
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="images/img1.png" width="312" height="350" loading="lazy"
+                    alt="Ecoluxe Citrus Bloom" class="image-contain">
+
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Tube Pack</a> 
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Ecoluxe Citrus Bloom</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">Rs.200<del>Rs.250</del></data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item" data-aos="zoom-in" data-aos-delay="100">              
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="images/img2.png" width="312" height="350" loading="lazy"
+                    alt="Ecoluxe Ocean Fresh–Box Pack" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Box pack</a> 
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Ecoluxe Ocean Fresh–Box Pack</a>
+                  </h3>
+
+                  <data class="card-price" value="190.85">Rs.100<del>Rs.150</del></data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item" data-aos="zoom-in" data-aos-delay="200">              
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="images/img3.png" width="312" height="350" loading="lazy"
+                    alt="Pack of 5 Paper Soap" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Tube pack</a> 
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Pack of 5 Paper Soap</a>
+                  </h3>
+
+                  <data class="card-price" value="380">Rs.900<del>Rs.1000</del></data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item" data-aos="zoom-in" data-aos-delay="300">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="images/img4.png" width="312" height="350" loading="lazy"
+                    alt="Pack Of 5 Travel Soap " class="image-contain">
+
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Box type</a> 
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Pack Of 5 Travel Soap</a>
+                  </h3>
+
+                  <data class="card-price" value="170.85">Rs.450 <del>Rs.500</del></data>
+
+                </div>
+
+              </div>
+            </li>
+
+        </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service">
+        <div class="container">
+
+          <ul class="service-list">
+
+          <li class="service-item" data-aos="fade-up" data-aos-delay="100">              
+            <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="images/service-1.png" width="53" height="28" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Free Shiping</h3>
+
+                  <p class="card-text">
+                    All orders over <span style="color:#979c66;">Rs.1000</span>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item" data-aos="fade-up" data-aos-delay="200">              
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="images/service-2.png" width="43" height="35" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Quick Payment</h3>
+
+                  <p class="card-text">
+                    100% secure payment
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item" data-aos="fade-up" data-aos-delay="300">              
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="images/service-3.png" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Free Returns</h3>
+
+                  <p class="card-text">
+                    Money back in 30 days
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item" data-aos="fade-up" data-aos-delay="400">              
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="images/service-4.png" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">24/7 Support</h3>
+
+                  <p class="card-text">
+                    Get Quick Support
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+<footer class="footer" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="footer-top section">
+    <div class="container">
+
+      <div class="footer-brand" data-aos="fade-up" data-aos-delay="200">
+        <a href="#" class="logo">
+          <h1 style="color: #6a1b9a;">Ecoluxe Soap</h1>
+        </a>
+
+        <ul class="social-list" data-aos="zoom-in" data-aos-delay="300">
+          <li>
+            <a href="https://www.facebook.com" class="social-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-link-box" data-aos="fade-up" data-aos-delay="400">
+
+        <ul class="footer-list" data-aos="fade-right" data-aos-delay="450">
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+          <li>
+            <address class="footer-link">
+              <ion-icon name="location"></ion-icon>
+              <span class="footer-link-text">
+                2nd Floor, Tech Plaza, Main Boulevard Road, Industrial Area, Karachi, Pakistan
+              </span>
+            </address>
+          </li>
+          <li>
+            <a href="tel:+92 21 34567890" class="footer-link">
+              <ion-icon name="call"></ion-icon>
+              <span class="footer-link-text">+92 21 34567890</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@srselectrical.com" class="footer-link">
+              <ion-icon name="mail"></ion-icon>
+              <span class="footer-link-text">info@ecoluxe.com</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-list" data-aos="fade-right" data-aos-delay="500">
+          <li>
+            <p class="footer-list-title">My Account</p>
+          </li>
+          <li><a href="#" class="footer-link"><ion-icon name="chevron-forward-outline"></ion-icon><span class="footer-link-text">About us</span></a></li>
+          <li><a href="#" class="footer-link"><ion-icon name="chevron-forward-outline"></ion-icon><span class="footer-link-text">View Cart</span></a></li>
+          <li><a href="#" class="footer-link"><ion-icon name="chevron-forward-outline"></ion-icon><span class="footer-link-text">Wishlist</span></a></li>
+          <li><a href="#" class="footer-link"><ion-icon name="chevron-forward-outline"></ion-icon><span class="footer-link-text">New Products</span></a></li>
+        </ul>
+
+        <div class="footer-list" data-aos="fade-left" data-aos-delay="550">
+          <p class="footer-list-title">Opening Time</p>
+          <table class="footer-table">
+            <tbody>
+              <tr class="table-row"><th class="table-head" scope="row">Mon - Tue:</th><td class="table-data">8AM - 10PM</td></tr>
+              <tr class="table-row"><th class="table-head" scope="row">Wed:</th><td class="table-data">8AM - 7PM</td></tr>
+              <tr class="table-row"><th class="table-head" scope="row">Fri:</th><td class="table-data">7AM - 12PM</td></tr>
+              <tr class="table-row"><th class="table-head" scope="row">Sat:</th><td class="table-data">9AM - 8PM</td></tr>
+              <tr class="table-row"><th class="table-head" scope="row">Sun:</th><td class="table-data">Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="footer-list" data-aos="fade-left" data-aos-delay="600">
+          <p class="footer-list-title">Newsletter</p>
+          <p class="newsletter-text">Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+          <form action="" class="newsletter-form">
+            <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="copyright">
+        &copy; 2025 <a href="#" class="copyright-link">Ecoluxe soap</a>. All Rights Reserved
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+<script>
+    'use strict';
+
+/**
+ * navbar toggle
+ */
+
+const overlay = document.querySelector("[data-overlay]");
+const navOpenBtn = document.querySelector("[data-nav-open-btn]");
+const navbar = document.querySelector("[data-navbar]");
+const navCloseBtn = document.querySelector("[data-nav-close-btn]");
+
+const navElems = [overlay, navOpenBtn, navCloseBtn];
+
+for (let i = 0; i < navElems.length; i++) {
+  navElems[i].addEventListener("click", function () {
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
+}
+
+/**
+ * header & go top btn active on page scroll
+ */
+
+const header = document.querySelector("[data-header]");
+const goTopBtn = document.querySelector("[data-go-top]");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 80) {
+    header.classList.add("active");
+    goTopBtn.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    goTopBtn.classList.remove("active");
+  }
+});
+  </script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 120
+  });
+  </script>
+ 
+</body>
+</html>
