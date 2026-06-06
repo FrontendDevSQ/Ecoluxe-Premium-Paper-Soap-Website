@@ -2,7 +2,7 @@
 
 > A modern, multi-page e-commerce website for a premium paper soap brand - featuring smooth AOS scroll animations, product showcase, and a fully responsive layout.
 
-🔗 **[Live Demo](https://your-vercel-url.vercel.app)**  
+🔗 **[Live Demo](https://ecoluxe-premium-paper-soap-website.vercel.app/)**  
 
 <p align="center">
   <img width="1920" height="2581" alt="image" src="https://github.com/user-attachments/assets/5e9c927e-4746-40fe-ba05-543d230856f3" />
